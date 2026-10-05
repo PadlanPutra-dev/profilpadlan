@@ -3,237 +3,448 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Muhammad Padlan Putra Permana</title>
+    <meta name="description" content="CV Muhammad Padlan Putra Permana, mahasiswa S1 Informatika ITENAS.">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-        }
+    <title>CV Muhammad Padlan Putra Permana</title>
 
-        header {
-            background-color: #2f8f68;
-            color: white;
-            text-align: center;
-            padding: 30px;
-        }
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
 
-        nav {
-            margin-top: 15px;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        nav a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-        }
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
 
-        main {
-            width: 80%;
-            max-width: 900px;
-            margin: 30px auto;
-        }
-
-        section {
-            background-color: white;
-            padding: 25px;
-            margin-bottom: 25px;
-            border-radius: 10px;
-        }
-
-        h2 {
-            color: #e85d04;
-        }
-
-        .profil {
-            text-align: center;
-        }
-
-        .profil img {
-            width: 180px;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 5px solid #2f8f68;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        td {
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        td:first-child {
-            font-weight: bold;
-            color: #2f8f68;
-            width: 30%;
-        }
-
-        .keahlian {
-            display: inline-block;
-            background-color: #2f8f68;
-            color: white;
-            padding: 7px 12px;
-            margin: 5px;
-            border-radius: 20px;
-        }
-
-        footer {
-            background-color: #222;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body
+    id="atas"
+    data-bs-spy="scroll"
+    data-bs-target="#menu"
+    data-bs-root-margin="-80px 0px -60% 0px"
+    tabindex="0"
+>
 
-    <header>
-        <h1>Profil Saya</h1>
-        <p>Muhammad Padlan Putra Permana</p>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container">
 
-        <nav>
-            <a href="#profil">Profil</a>
-            <a href="#pendidikan">Pendidikan</a>
-            <a href="#pengalaman">Pengalaman</a>
-            <a href="#keahlian">Keahlian</a>
-            <a href="#sertifikasi">Sertifikasi</a>
-        </nav>
+            <a class="navbar-brand logo" href="#atas" aria-label="Kembali ke atas">MP</a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+                aria-controls="menu"
+                aria-label="Buka menu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pengalaman">Pengalaman</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pendidikan">Pendidikan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sertifikasi">Sertifikasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#organisasi">Organisasi</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <header class="hero">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-7">
+
+                    <p class="hero-label">Mahasiswa S1 Informatika · ITENAS</p>
+
+                    <h1>
+                        Muhammad Padlan
+                        <span>Putra Permana</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Berlatar belakang Teknik Komputer dan Jaringan,
+                        sedang mendalami pemrograman, backend,
+                        IoT, dan machine learning.
+                    </p>
+
+                    <div class="hero-tombol">
+                        <a class="tombol tombol-merah" href="#kontak">Hubungi Saya</a>
+                        <a class="tombol tombol-garis" href="#pengalaman">Lihat Pengalaman</a>
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-5">
+
+                    <div class="foto">
+
+                        <img
+                            src="Foto Formal.jpg"
+                            alt="Foto Muhammad Padlan Putra Permana"
+                        >
+
+                        <span class="foto-lokasi">Bandung, Indonesia</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </header>
 
-    <main>
 
-        <section id="profil" class="profil">
-            <h2>Tentang Saya</h2>
+    <section id="kontak" class="kontak" aria-label="Kontak">
 
-            <img src="Foto Formal.jpg" alt="Foto Muhammad Padlan Putra Permana">
+        <div class="container kontak-isi">
 
-            <p>
-                Saya merupakan mahasiswa S1 Informatika
-                Institut Teknologi Nasional Bandung.
-                Saya tertarik pada pemrograman, jaringan komputer,
-                IoT, machine learning, dan pengembangan sistem.
-            </p>
+            <div>
+                <small>Telepon</small>
+                <a href="tel:+628180653775">+62 818-0653-5775</a>
+            </div>
 
-            <table>
-                <tr>
-                    <td>Nama</td>
-                    <td>Muhammad Padlan Putra Permana</td>
-                </tr>
+            <div>
+                <small>Email</small>
+                <a href="mailto:padlanputra85@gmail.com">padlanputra85@gmail.com</a>
+            </div>
 
-                <tr>
-                    <td>Program Studi</td>
-                    <td>S1 Informatika</td>
-                </tr>
+            <div>
+                <small>Email ITENAS</small>
+                <a href="mailto:muhammad.padlan@itenas.ac.id">muhammad.padlan@itenas.ac.id</a>
+            </div>
 
-                <tr>
-                    <td>Institusi</td>
-                    <td>Institut Teknologi Nasional Bandung</td>
-                </tr>
+        </div>
 
-                <tr>
-                    <td>Asal Kota</td>
-                    <td>Bandung</td>
-                </tr>
+    </section>
 
-                <tr>
-                    <td>Email</td>
-                    <td><a href="mailto:padlanputra85@gmail.com">padlanputra85@gmail.com</a></td>
-                </tr>
 
-                <tr>
-                    <td>Telepon</td>
-                    <td><a href="tel:+628180653775">+62 818-0653-5775</a></td>
-                </tr>
-            </table>
-        </section>
+    <section id="tentang" class="section">
 
-        <section id="pendidikan">
-            <h2>Pendidikan</h2>
+        <div class="container">
 
-            <h3>S1 Informatika</h3>
-            <p>Institut Teknologi Nasional Bandung (ITENAS)</p>
-            <p>2025 - sekarang</p>
-            <p>IP Semester 2: 3.84</p>
+            <h2 class="section-title">Tentang Saya</h2>
 
-            <hr>
+            <div class="row g-4 align-items-end">
 
-            <h3>Teknik Komputer dan Jaringan</h3>
-            <p>SMK Negeri 4 Bandung</p>
-            <p>2022 - 2025</p>
-        </section>
+                <div class="col-lg-7">
 
-        <section id="pengalaman">
-            <h2>Pengalaman</h2>
+                    <p class="headline">
+                        Belajar teknologi melalui
+                        <span>proyek nyata.</span>
+                    </p>
 
-            <h3>IT Support</h3>
-            <p>Holiday Inn Bandung Pasteur</p>
-            <p>November 2024 - Maret 2025</p>
+                </div>
 
-            <ul>
-                <li>Pemantauan server dan pencadangan data.</li>
-                <li>Konfigurasi jaringan Wi-Fi dan bandwidth hotel.</li>
-                <li>Troubleshooting hardware dan software.</li>
-                <li>Instalasi ulang sistem operasi.</li>
-                <li>Crimping kabel UTP.</li>
-                <li>Mengoperasikan PMS dan POS hotel.</li>
-            </ul>
-        </section>
+                <div class="col-lg-5">
 
-        <section id="keahlian">
-            <h2>Keahlian</h2>
+                    <div class="profil-teks">
 
-            <span class="keahlian">Python</span>
-            <span class="keahlian">JavaScript</span>
-            <span class="keahlian">HTML</span>
-            <span class="keahlian">CSS</span>
-            <span class="keahlian">React</span>
-            <span class="keahlian">Node.js</span>
-            <span class="keahlian">FastAPI</span>
-            <span class="keahlian">MySQL</span>
-            <span class="keahlian">Machine Learning</span>
-            <span class="keahlian">Data Mining</span>
-            <span class="keahlian">Networking</span>
-            <span class="keahlian">IoT</span>
-            <span class="keahlian">MQTT</span>
-            <span class="keahlian">Git</span>
-        </section>
+                        <p>
+                            Saya mahasiswa S1 Informatika ITENAS dengan latar
+                            belakang Teknik Komputer dan Jaringan dari
+                            SMK Negeri 4 Bandung.
+                        </p>
 
-        <section id="sertifikasi">
-            <h2>Pelatihan dan Sertifikasi</h2>
+                        <p>
+                            Pengalaman sebagai IT Support membuat saya terbiasa
+                            melakukan troubleshooting hardware maupun software.
+                            Saat ini saya mengembangkan kemampuan di
+                            pemrograman, backend, IoT, machine learning,
+                            data mining, dan database.
+                        </p>
 
-            <h3>Cisco Networking Academy</h3>
+                    </div>
 
-            <ul>
-                <li>CCNA (ITN, SRWE, ENSA)</li>
-                <li>Introduction to IoT</li>
-                <li>Modern AI</li>
-                <li>Cybersecurity</li>
-                <li>Data Science</li>
-                <li>IT Essentials</li>
-            </ul>
+                </div>
 
-            <h3>Dicoding</h3>
+            </div>
 
-            <ul>
-                <li>Memulai Pemrograman dengan Python</li>
-                <li>Belajar Dasar AI</li>
-                <li>Prompt Engineering untuk Software Developer</li>
-            </ul>
-        </section>
 
-    </main>
+            <div class="proof">
 
-    <footer>
-        <p>&copy; 2026 Muhammad Padlan Putra Permana</p>
+                <div class="proof-item">
+                    <strong>3.84</strong>
+                    <p>IP Semester 2, S1 Informatika ITENAS</p>
+                </div>
+
+                <div class="proof-item">
+                    <strong>IT Support</strong>
+                    <p>Holiday Inn Bandung Pasteur, November 2024 - Maret 2025</p>
+                </div>
+
+                <div class="proof-item">
+                    <strong>Networking</strong>
+                    <p>Latar TKJ dan modul CCNA dari Cisco Networking Academy</p>
+                </div>
+
+                <div class="proof-item">
+                    <strong>IoT / AI</strong>
+                    <p>ESP32 dan MQTT, serta machine learning yang sedang dipelajari</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="pengalaman" class="section abu">
+
+        <div class="container">
+
+            <h2 class="section-title">Pengalaman</h2>
+
+            <div class="row g-4">
+
+                <div class="col-lg-5">
+
+                    <div class="kotak-jabatan">
+
+                        <p class="jabatan">IT Support</p>
+
+                        <h3>Holiday Inn Bandung Pasteur</h3>
+
+                        <p class="periode">November 2024 - Maret 2025</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-7">
+
+                    <h3 class="tugas-judul">Tanggung jawab utama</h3>
+
+                    <ul class="daftar-tugas">
+                        <li>Pemantauan server dan pencadangan data.</li>
+                        <li>Konfigurasi jaringan Wi-Fi dan bandwidth.</li>
+                        <li>Troubleshooting hardware dan software.</li>
+                        <li>Instalasi ulang OS dan crimping kabel UTP.</li>
+                        <li>Mengoperasikan PMS dan POS hotel.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="keahlian" class="section skills">
+
+        <div class="container">
+
+            <h2 class="section-title">Keahlian</h2>
+
+            <div class="skill-grid">
+
+                <div class="skill-group">
+                    <h3>Pemrograman</h3>
+                    <ul class="chips">
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Web &amp; Backend</h3>
+                    <ul class="chips">
+                        <li>HTML &amp; CSS</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>FastAPI</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Database</h3>
+                    <ul class="chips">
+                        <li>MySQL</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Jaringan &amp; IoT</h3>
+                    <ul class="chips">
+                        <li>Cisco Packet Tracer</li>
+                        <li>Linux</li>
+                        <li>MQTT</li>
+                        <li>ESP32</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Tools</h3>
+                    <ul class="chips">
+                        <li>Git</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Sedang dipelajari</h3>
+                    <ul class="chips chips-belajar">
+                        <li>Machine Learning</li>
+                        <li>Data Mining</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="pendidikan" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">Pendidikan</h2>
+
+            <div class="pendidikan-grid">
+
+                <div class="pendidikan-item">
+                    <span class="tahun">2025 - sekarang</span>
+                    <h3>S1 Informatika</h3>
+                    <p>Institut Teknologi Nasional Bandung (ITENAS)</p>
+                    <small>IP Semester 2: 3.84</small>
+                </div>
+
+                <div class="pendidikan-item">
+                    <span class="tahun">2022 - 2025</span>
+                    <h3>Teknik Komputer dan Jaringan</h3>
+                    <p>SMK Negeri 4 Bandung</p>
+                    <small>Fokus pada jaringan dan sistem komputer</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="sertifikasi" class="section abu">
+
+        <div class="container">
+
+            <h2 class="section-title">Sertifikasi</h2>
+
+            <div class="sertifikasi-grid">
+
+                <div>
+
+                    <div class="sertifikat-atas">
+                        <h3>Cisco Networking Academy</h3>
+                        <span>2025</span>
+                    </div>
+
+                    <ul class="daftar-sertifikat">
+                        <li>CCNA (ITN, SRWE, ENSA)</li>
+                        <li>Introduction to IoT</li>
+                        <li>Modern AI</li>
+                        <li>Cybersecurity</li>
+                        <li>Data Science</li>
+                        <li>IT Essentials</li>
+                    </ul>
+
+                </div>
+
+                <div>
+
+                    <div class="sertifikat-atas">
+                        <h3>Dicoding</h3>
+                        <span>2025</span>
+                    </div>
+
+                    <ul class="daftar-sertifikat">
+                        <li>Memulai Pemrograman dengan Python</li>
+                        <li>Belajar Dasar AI</li>
+                        <li>Prompt Engineering untuk Software Developer</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="organisasi" class="section section-kecil">
+
+        <div class="container">
+
+            <h2 class="section-title">Organisasi</h2>
+
+            <div class="organisasi">
+                <h3>Himpunan Mahasiswa Informatika</h3>
+                <p>Institut Teknologi Nasional Bandung (ITENAS)</p>
+                <small>Calon Anggota Aktif · 2025 - sekarang</small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="container footer-isi">
+
+            <span>© 2026 Muhammad Padlan Putra Permana</span>
+
+            <a href="#atas">Kembali ke atas ↑</a>
+
+        </div>
+
     </footer>
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <script>
+        const menu = document.getElementById("menu");
+        const linkMenu = document.querySelectorAll("#menu .nav-link");
+
+        linkMenu.forEach(function (link) {
+            link.addEventListener("click", function () {
+                if (menu.classList.contains("show")) {
+                    bootstrap.Collapse.getOrCreateInstance(menu, { toggle: false }).hide();
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
